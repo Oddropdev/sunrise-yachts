@@ -71,7 +71,7 @@ h3{font-size:clamp(16px,2vw,20px); font-weight:500}
 
 /* Centered content with big logo */
 .hero__inner{
-  position:relative; text-align:center; z-index:2; padding-bottom:8vh;
+  position:relative; text-align:center; z-index:3; padding-bottom:8vh;
   display:flex; flex-direction:column; align-items:center; gap:10px;
 }
 .hero-center-logo{
