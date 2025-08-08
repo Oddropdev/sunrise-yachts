@@ -40,16 +40,55 @@ h3{font-size:clamp(16px,2vw,20px); font-weight:500}
 .link-cta{color:var(--gold)}
 
 /* Hero */
-.hero{
-  position:relative; min-height:76vh; display:grid; place-items:end center;
+.hero {
+  position: relative;
+  min-height: 76vh;
+  display: grid;
+  place-items: end center;
   background:
-    radial-gradient(1200px 60% at 60% 15%, rgba(214,177,103,.18), transparent 60%),
-    linear-gradient(180deg, rgba(14,26,43,.1), var(--navy) 75%),
+    radial-gradient(1200px 60% at 60% 15%, rgba(214, 177, 103, .18), transparent 60%),
+    linear-gradient(180deg, rgba(14, 26, 43, .1), var(--navy) 75%),
     var(--hero) center/cover no-repeat;
 }
-.hero::after{
-  content:""; position:absolute; inset:auto 0 0 0; height:36%;
-  background:linear-gradient(180deg, transparent, var(--navy));
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35); /* Tummentaa hero-kuvaa */
+  z-index: 1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 36%;
+  background: linear-gradient(180deg, transparent, var(--navy));
+  z-index: 2;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 3; /* Sisältö näkyy overlayn päällä */
+  text-align: center;
+}
+
+.hero__inner img {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.hero__inner h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero__inner p {
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin: 0 auto 25px;
 }
 
 /* Centered content with big logo */
