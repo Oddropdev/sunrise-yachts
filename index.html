@@ -1,112 +1,63 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sunrise Yachts — The Horizon Is Yours</title>
-  <meta name="description" content="Sunrise Yachts — design-forward luxury yachts and tailored experiences." />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunrise Yachts</title>
   <link rel="stylesheet" href="sunrise.css" />
 </head>
-
-<body class="site" id="top">
-
-  <!-- Header / Hero -->
-  <header class="hero" style="--hero:url('hero-yacht.jpg')">
-    <nav class="top wrap">
-      <a class="brand" href="#top" aria-label="Sunrise Yachts – etusivu">
-        <img class="mark" src="logo-sunrise.png" alt="Sunrise Yachts logo">
-        <span class="wordmark">SUNRISE <em>YACHTS</em></span>
-      </a>
-      <div class="navlinks">
-        <a href="#fleet">Fleet</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact" class="link-cta">Contact</a>
-      </div>
-    </nav>
-
-    <div class="hero__inner wrap">
-      <h1 class="hero__title">The Horizon Is Yours<span class="tm">™</span></h1>
-      <p class="hero__lead">Design-forward vessels. Tailored luxury. European craftsmanship.</p>
-      <div class="cta">
-        <a class="btn btn--gold" href="#fleet">Explore Fleet</a>
-        <a class="btn btn--ghost" href="#contact">Contact Us</a>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="logo-sunrise.png" alt="Sunrise Yachts Logo" class="hero-logo" />
+      <h1 class="hero-title">The Horizon Is Yours</h1>
+      <div class="hero-buttons">
+        <a href="#fleet" class="btn">Explore Fleet</a>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
       </div>
     </div>
-  </header>
+  </section>
 
-  <!-- Pillars -->
-  <section class="pillars wrap" id="about">
-    <div class="pillar">
-      <img class="pillar__icon" src="icon-design.png" alt="">
-      <h3>Design-forward vessels</h3>
-      <p>Iconic silhouettes, timeless proportion and modern performance.</p>
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">
+      <img src="icon-design.png" alt="Design Icon" />
+      <p>Design-forward vessels</p>
     </div>
-    <div class="pillar">
-      <img class="pillar__icon" src="icon-luxury.png" alt="">
-      <h3>Tailored-luxury experiences</h3>
-      <p>Every journey bespoke—crew, itinerary and interiors your way.</p>
+    <div class="feature">
+      <img src="icon-luxury.png" alt="Luxury Icon" />
+      <p>Tailored-luxury experiences</p>
     </div>
-    <div class="pillar">
-      <img class="pillar__icon" src="icon-engineering.png" alt="">
-      <h3>European engineering</h3>
-      <p>Hand-finished details, silent comfort and ocean-proven builds.</p>
+    <div class="feature">
+      <img src="icon-engineering.png" alt="Engineering Icon" />
+      <p>Handcrafted European engineering</p>
     </div>
   </section>
 
   <!-- Fleet -->
-  <section id="fleet" class="fleet wrap">
-    <article class="lead">
-      <h2>Featured Builds</h2>
-      <p>Authentic Sunrise Yachts projects<br><span class="muted">45–64 m</span></p>
-    </article>
-
-    <div class="cards">
-      <a class="card" style="--img:url('yacht_maximilian45.jpg')" href="#" aria-label="Sunrise 45m Maximilian">
-        <div class="card__meta"><h4>Sunrise 45m “Maximilian”</h4><p>Timeless steel & aluminium</p></div>
-      </a>
-      <a class="card" style="--img:url('yacht-irimari64.jpg')" href="#" aria-label="Sunrise 64m Irimari">
-        <div class="card__meta"><h4>Sunrise 64m “Irimari”</h4><p>Espen Øino exterior</p></div>
-      </a>
-      <a class="card" style="--img:url('yacht-lionspirit57.jpg')" href="#" aria-label="Sunrise 57m Lionspirit">
-        <div class="card__meta"><h4>Sunrise 57m “Lionspirit”</h4><p>Infinity-pool concept</p></div>
-      </a>
+  <section id="fleet" class="fleet">
+    <div class="yacht">
+      <img src="yacht_maximilian45.jpg" alt="Maximilian 45" />
+      <h3>Maximilian 45</h3>
+      <p>Luxury Sport Yacht | 45 m</p>
     </div>
-  </section>
-
-  <!-- Gallery -->
-  <section id="gallery" class="gallery wrap">
-    <h2>Sunrise Moments</h2>
-    <p class="sub">Captured by our guests.</p>
-    <div class="grid">
-      <img src="hero-yacht.jpg" alt="At anchor at sunset">
-      <img src="yacht-irimari64.jpg" alt="Irimari under way">
-      <img src="yacht_maximilian45.jpg" alt="45m profile">
-      <img src="yacht-lionspirit57.jpg" alt="57m concept from above">
+    <div class="yacht">
+      <img src="yacht-irimari64.jpg" alt="Irimari 64" />
+      <h3>Irimari 64</h3>
+      <p>Grand Ocean Cruiser | 64 m</p>
+    </div>
+    <div class="yacht">
+      <img src="yacht-lionspirit57.jpg" alt="Lionspirit 57" />
+      <h3>Lionspirit 57</h3>
+      <p>Infinity Pool Deck | 57 m</p>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="contact wrap">
-    <h2>Contact</h2>
-    <p class="sub">Start your journey. We’ll reply within 24 hours.</p>
-    <form class="form" action="#" method="post">
-      <div class="row">
-        <input type="text" name="name" placeholder="Full name" required>
-        <input type="email" name="email" placeholder="Email" required>
-      </div>
-      <div class="row">
-        <input type="text" name="phone" placeholder="Phone (optional)">
-        <input type="text" name="yacht" placeholder="Yacht of interest (optional)">
-      </div>
-      <textarea name="message" rows="5" placeholder="Tell us about your plans…" required></textarea>
-      <button class="btn btn--gold" type="submit">Send Inquiry</button>
-    </form>
+  <section id="contact" class="contact">
+    <h2>Contact Sunrise Yachts</h2>
+    <p>Email us at <a href="mailto:info@sunrise.yachts">info@sunrise.yachts</a></p>
   </section>
-
-  <footer class="footer">
-    <p>© 2025 Sunrise Yachts. All rights reserved.</p>
-  </footer>
-
 </body>
 </html>
