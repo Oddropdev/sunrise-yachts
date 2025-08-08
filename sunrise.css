@@ -68,28 +68,6 @@ h3{font-size:clamp(16px,2vw,20px); font-weight:500}
   z-index: 2;
 }
 
-.hero__inner {
-  position: relative;
-  z-index: 3; /* Sisältö näkyy overlayn päällä */
-  text-align: center;
-}
-
-.hero__inner img {
-  max-width: 300px;
-  margin-bottom: 20px;
-}
-
-.hero__inner h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.hero__inner p {
-  font-size: 1.1rem;
-  max-width: 500px;
-  margin: 0 auto 25px;
-}
 
 /* Centered content with big logo */
 .hero__inner{
