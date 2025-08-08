@@ -9,17 +9,13 @@
   <link rel="stylesheet" href="sunrise.css" />
 </head>
 
-<body class="site">
+<body class="site" id="top">
 
   <!-- Header / Hero -->
-  <header class="hero" style="--hero:url('images/hero.jpg')">
+  <header class="hero" style="--hero:url('hero-yacht.jpg')">
     <nav class="top wrap">
       <a class="brand" href="#top" aria-label="Sunrise Yachts – etusivu">
-        <!-- Inline-SVG logo mark (kulta ottaa värin CSS:stä) -->
-        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
-          <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="currentColor"/><stop offset="1" stop-color="currentColor"/></linearGradient></defs>
-          <path fill="currentColor" d="M49.5 35.5a1.5 1.5 0 0 0 0-3c-7.5-2.7-14.8-2.7-22.3 0-6.9 2.5-13.7 2.7-21 .7a1.5 1.5 0 1 0-.8 2.9c7.9 2.2 15.4 2 22.9-.7 6.7-2.4 13.3-2.4 20 0zM55 28a23 23 0 1 0-46 0 1.5 1.5 0 0 0 3 0 20 20 0 1 1 40 0 1.5 1.5 0 0 0 3 0zM60.5 41.2c-7-2.1-13.9-1.9-21 .8-6.8 2.5-13.8 2.6-21 .3a1.5 1.5 0 0 0-1 2.9c7.8 2.6 15.5 2.5 23.2-.2 6.6-2.4 13.1-2.6 19.6-.7a1.5 1.5 0 1 0 .8-2.9z"/>
-        </svg>
+        <img class="mark" src="logo-sunrise.png" alt="Sunrise Yachts logo">
         <span class="wordmark">SUNRISE <em>YACHTS</em></span>
       </a>
       <div class="navlinks">
@@ -41,24 +37,39 @@
 
   <!-- Pillars -->
   <section class="pillars wrap" id="about">
-    <div class="pillar"><h3>Design-forward vessels</h3><p>Iconic silhouettes, timeless proportion and modern performance.</p></div>
-    <div class="pillar"><h3>Tailored-luxury experiences</h3><p>Every journey bespoke—crew, itinerary and interiors your way.</p></div>
-    <div class="pillar"><h3>European engineering</h3><p>Hand-finished details, silent comfort and ocean-proven builds.</p></div>
+    <div class="pillar">
+      <img class="pillar__icon" src="icon-design.png" alt="">
+      <h3>Design-forward vessels</h3>
+      <p>Iconic silhouettes, timeless proportion and modern performance.</p>
+    </div>
+    <div class="pillar">
+      <img class="pillar__icon" src="icon-luxury.png" alt="">
+      <h3>Tailored-luxury experiences</h3>
+      <p>Every journey bespoke—crew, itinerary and interiors your way.</p>
+    </div>
+    <div class="pillar">
+      <img class="pillar__icon" src="icon-engineering.png" alt="">
+      <h3>European engineering</h3>
+      <p>Hand-finished details, silent comfort and ocean-proven builds.</p>
+    </div>
   </section>
 
   <!-- Fleet -->
   <section id="fleet" class="fleet wrap">
     <article class="lead">
-      <h2>Aurora 88</h2>
-      <p>Timeless Beauty<br><span class="muted">26 m</span></p>
+      <h2>Featured Builds</h2>
+      <p>Authentic Sunrise Yachts projects<br><span class="muted">45–64 m</span></p>
     </article>
 
     <div class="cards">
-      <a class="card" style="--img:url('images/yacht-1.jpg')" href="#">
-        <div class="card__meta"><h4>Horizon 12</h4><p>Built for Distance</p></div>
+      <a class="card" style="--img:url('yacht_maximilian45.jpg')" href="#" aria-label="Sunrise 45m Maximilian">
+        <div class="card__meta"><h4>Sunrise 45m “Maximilian”</h4><p>Timeless steel & aluminium</p></div>
       </a>
-      <a class="card" style="--img:url('images/yacht-2.jpg')" href="#">
-        <div class="card__meta"><h4>Solstice 100</h4><p>Bespoke Ultra-Yacht</p></div>
+      <a class="card" style="--img:url('yacht-irimari64.jpg')" href="#" aria-label="Sunrise 64m Irimari">
+        <div class="card__meta"><h4>Sunrise 64m “Irimari”</h4><p>Espen Øino exterior</p></div>
+      </a>
+      <a class="card" style="--img:url('yacht-lionspirit57.jpg')" href="#" aria-label="Sunrise 57m Lionspirit">
+        <div class="card__meta"><h4>Sunrise 57m “Lionspirit”</h4><p>Infinity-pool concept</p></div>
       </a>
     </div>
   </section>
@@ -68,14 +79,14 @@
     <h2>Sunrise Moments</h2>
     <p class="sub">Captured by our guests.</p>
     <div class="grid">
-      <img src="images/gal-1.jpg" alt="Breakfast at sea">
-      <img src="images/gal-2.jpg" alt="Swimming in turquoise bay">
-      <img src="images/gal-3.jpg" alt="Sunset at anchor">
-      <img src="images/gal-4.jpg" alt="Evening on deck">
+      <img src="hero-yacht.jpg" alt="At anchor at sunset">
+      <img src="yacht-irimari64.jpg" alt="Irimari under way">
+      <img src="yacht_maximilian45.jpg" alt="45m profile">
+      <img src="yacht-lionspirit57.jpg" alt="57m concept from above">
     </div>
   </section>
 
-  <!-- Contact (yksi sivu riittää) -->
+  <!-- Contact -->
   <section id="contact" class="contact wrap">
     <h2>Contact</h2>
     <p class="sub">Start your journey. We’ll reply within 24 hours.</p>
