@@ -32,7 +32,7 @@ h3{font-size:clamp(16px,2vw,20px); font-weight:500}
 /* Header / Top nav */
 .top{display:flex; align-items:center; justify-content:space-between; gap:16px}
 .brand{display:flex; align-items:center; gap:10px; color:var(--pearl); text-decoration:none}
-.mark{height:28px; color:var(--gold)}
+.mark{height:32px; width:auto; display:block; object-fit:contain}
 .wordmark{letter-spacing:.28em; font-weight:700; font-size:12px}
 .wordmark em{font-style:normal; color:var(--gold)}
 .navlinks a{color:var(--pearl); text-decoration:none; margin-left:18px; opacity:.9}
@@ -71,11 +71,20 @@ h3{font-size:clamp(16px,2vw,20px); font-weight:500}
   border:1px solid rgba(255,255,255,.06);
   padding:22px 20px; border-radius:14px;
 }
+.pillar__icon{
+  width:28px; height:28px; object-fit:contain; display:block; margin-bottom:10px;
+  /* kultainen sävy tummalla */
+  filter: brightness(1) saturate(0) invert(79%) sepia(31%) saturate(521%) hue-rotate(353deg) brightness(96%) contrast(92%);
+}
 
 /* Fleet */
 .fleet{display:grid; grid-template-columns:320px 1fr; gap:32px; align-items:start}
 .fleet .lead p{opacity:.85}
-.cards{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
 .card{
   position:relative; aspect-ratio:16/10; border-radius:14px; overflow:hidden;
   background:var(--navy-2); background-image:var(--img); background-size:cover; background-position:center;
